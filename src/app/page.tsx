@@ -1,4 +1,5 @@
 import CreateToken from "@/components/buttons/create_token";
+import PayButton from "@/components/buttons/pay";
 
 export default function Home() {
   return (
@@ -6,7 +7,10 @@ export default function Home() {
       <div className="text-2xl font-bold text-center">
         <span className="text-pink-500 underline">Bkash</span> payment getway
       </div>
-      <CreateToken/>
+      <div className="space-x-4">
+        <CreateToken />
+        <PayButton />
+      </div>
     </div>
   );
 }
